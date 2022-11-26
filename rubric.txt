@@ -1,0 +1,24 @@
+~ Deletar do carrinho;
+
+~ Cálculo subtotal;
+
+~ Filtro;
+
+~ Verificar item duplicado no carrinho, alternando somente a quantidade;
+
+~ Layout - Button/Card/Header/InputSearch/Cart/CartCard/TotalCart (components);
+
+~ Responsividade;
+
+~ Boas Práticas:
+* Código bem indentado;
+* Variáveis bem descritivas;
+* Padronização:
+- com ou sem ponto e vírgula;
+- aspas duplas ou aspas simples;
+- arrow function ou regular function para os
+componentes;
+
+~ Axios API;
+
+~ Componentização (props/childrens).
