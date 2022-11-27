@@ -30,9 +30,9 @@ export const CartContainer = styled.section`
   }
 
   @media (min-width: 720px) {
-    width: 55%;
-    min-width: 330px;
-    height: 75vh;
+    width: 40%;
+    height: max-content;
+    max-height: 60vh;
     margin: 0;
   }
 

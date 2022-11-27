@@ -7,14 +7,14 @@ import { Dashboard } from "./styles";
 
 export function DashBoard() {
   const [list, setList] = useState([]);
-  const [cart, setCart] = useState([7]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     async function hambData() {
       try {
         const request = await api.get();
         setList(request.data);
-        setCart(request.data)
+        setCart(request.data);
       } catch (err) {
         console.error(err);
       }

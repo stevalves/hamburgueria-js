@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  width: 100vw;
+  width: 100%;
   padding: 1rem;
 
   background: var(--grey-0);
@@ -20,12 +20,16 @@ export const HeaderContainer = styled.header`
 
   @media (min-width: 720px) {
     flex-direction: row;
-    min-width:1100px;
+    padding: 1rem 0;
+    min-width: 1100px;
 
     &>div {
       flex-direction: row;
-      width: 85vw;
       justify-content: space-between;
+
+      width: 70vw;
+      max-width: calc(70vw - 1.5%);
+      min-width: 1060px;
       margin: 0 auto;
     }
   }

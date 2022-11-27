@@ -16,5 +16,6 @@ export const CartListContainer = styled.ul`
     @media (min-width: 720px) {
         height: 100vh;
         max-height: inherit;
+        min-width:inherit;
     }
 `
