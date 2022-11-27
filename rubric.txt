@@ -6,9 +6,9 @@
 
 ~ Verificar item duplicado no carrinho, alternando somente a quantidade;
 
-~ Layout - Button/Card/Header/InputSearch/Cart/CartCard/TotalCart (components);
+~ Layout - Button/Card/Header/InputSearch/Cart/CartCard/TotalCart (components); (x)
 
-~ Responsividade;
+~ Responsividade; (x)
 
 ~ Boas Práticas:
 * Código bem indentado;
@@ -19,6 +19,21 @@
 - arrow function ou regular function para os
 componentes;
 
-~ Axios API;
+~ Axios API; (x)
 
-~ Componentização (props/childrens).
+~ Componentização (props/childrens). (x)
+
+
+fault => {
+
+    * Pesquisa (filtro)
+
+    * Adicionar/Retirar do carrinho
+
+    * Somar preço produtos carrinho (contador?)
+
+    * Remover todos do carrinho
+
+    * Tentar arrumar respons (800px ~ 1000px)
+
+}
