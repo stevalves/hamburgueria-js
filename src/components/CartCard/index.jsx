@@ -1,6 +1,12 @@
 import { CartCardContainer } from "./styles";
 
-export function CartCard({ value }) {
+export function CartCard({ value, id, cart, setCart }) {
+  function removeFromCart() {
+    const newCart = [...cart];
+    newCart.splice(id, 1);
+    setCart(newCart);
+  }
+
   return (
     <CartCardContainer>
       <div>
@@ -10,7 +16,9 @@ export function CartCard({ value }) {
         <h2>{value.name}</h2>
         <h3>{value.category}</h3>
       </div>
-      <button>Remover</button>
+      <button type="button" onClick={removeFromCart}>
+        Remover
+      </button>
     </CartCardContainer>
   );
 }

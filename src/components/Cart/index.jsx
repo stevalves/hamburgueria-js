@@ -4,7 +4,7 @@ import { CartList } from "../CartList";
 import { CardTotal } from "../CartTotal";
 import { CartContainer } from "./styles";
 
-export function Cart({ dataCart }) {
+export function Cart({ dataCart, setCart, cart }) {
   const [inn, setInn] = useState();
 
   useEffect(() => {
@@ -17,9 +17,9 @@ export function Cart({ dataCart }) {
       {inn && <CartEmpty />}
       {!inn && (
         <>
-          <CartList dataCart={dataCart} />
+          <CartList dataCart={dataCart} cart={cart} setCart={setCart} />
           <hr />
-          <CardTotal />
+          <CardTotal cart={cart} setCart={setCart} />
         </>
       )}
     </CartContainer>

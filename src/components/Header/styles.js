@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   gap: 1rem;
 
-  &>div {
+  & > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@ export const HeaderContainer = styled.header`
     padding: 1rem 0;
     min-width: 1100px;
 
-    &>div {
+    & > div {
       flex-direction: row;
       justify-content: space-between;
 
@@ -45,5 +45,4 @@ export const Logo = styled.h1`
     font-size: var(--size-head3);
     font-weight: 500;
   }
-
 `;

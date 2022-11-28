@@ -30,10 +30,9 @@ export const CartContainer = styled.section`
   }
 
   @media (min-width: 720px) {
-    width: 40%;
+    width: 60%;
     height: max-content;
     max-height: 60vh;
     margin: 0;
   }
-
 `;

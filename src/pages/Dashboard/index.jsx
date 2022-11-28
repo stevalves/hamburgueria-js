@@ -8,13 +8,13 @@ import { Dashboard } from "./styles";
 export function DashBoard() {
   const [list, setList] = useState([]);
   const [cart, setCart] = useState([]);
+  const [render, setRender] = useState([]);
 
   useEffect(() => {
     async function hambData() {
       try {
         const request = await api.get();
         setList(request.data);
-        setCart(request.data);
       } catch (err) {
         console.error(err);
       }
@@ -24,10 +24,10 @@ export function DashBoard() {
 
   return (
     <Dashboard>
-      <Header />
+      <Header list={list} setRender={setRender} />
       <main>
-        <List dataList={list} />
-        <Cart dataCart={cart} />
+        <List dataList={render} setCart={setCart} cart={cart} />
+        <Cart dataCart={cart} setCart={setCart} cart={cart} />
       </main>
     </Dashboard>
   );

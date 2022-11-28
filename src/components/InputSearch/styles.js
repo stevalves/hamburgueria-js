@@ -23,7 +23,7 @@ export const InputSearchContainer = styled.div`
     padding: 0.75rem 1rem;
     color: var(--white);
     width: 25%;
-    min-width:110px;
+    min-width: 110px;
   }
 
   button:hover {
@@ -43,7 +43,6 @@ export const InputSearchContainer = styled.div`
   input:focus {
     outline: none;
   }
-
 
   @media (min-width: 720px) {
     width: 30%;
