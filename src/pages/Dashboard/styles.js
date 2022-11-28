@@ -15,6 +15,7 @@ export const Dashboard = styled.div`
   @media (min-width: 720px) {
     main {
       flex-direction: row;
+      justify-content: space-between;
       width: calc(80% - 2rem);
       max-width: 70vw;
       margin: 0 auto;

@@ -31,6 +31,7 @@ export const CartContainer = styled.section`
 
   @media (min-width: 720px) {
     width: 60%;
+    max-width: 335px;
     height: max-content;
     max-height: 60vh;
     margin: 0;
