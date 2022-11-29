@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { toast } from "react-toastify";
 import { InputSearchContainer } from "./styles";
 
 export function InputSearch({ list, setRender }) {
@@ -17,10 +18,6 @@ export function InputSearch({ list, setRender }) {
     setRender(list);
   }
 
-  useEffect(() => {
-    setRender(filter);
-  }, [search]);
-
   return (
     <InputSearchContainer>
       <input
@@ -28,7 +25,15 @@ export function InputSearch({ list, setRender }) {
         placeholder="Digitar Pesquisa"
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button onClick={(e) => console.log(search)}>Pesquisar</button>
+      <button
+        onClick={() => {
+          filter.length != 0
+            ? setRender(filter)
+            : toast("Nenhum resultado encontrado");
+        }}
+      >
+        Pesquisar
+      </button>
     </InputSearchContainer>
   );
 }

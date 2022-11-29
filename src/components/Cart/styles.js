@@ -10,6 +10,7 @@ export const CartContainer = styled.section`
   margin-bottom: 1rem;
 
   width: calc(100% - 2rem);
+  max-height: 50vh;
 
   & > h3 {
     width: 100%;

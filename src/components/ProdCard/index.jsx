@@ -1,9 +1,11 @@
 import { CardContainer } from "./styles";
 
-export function Card({ valuer, setCart, cart }) {
+export function Card({ valuer, setCart, cart, setToaster }) {
   function addToCart(item) {
     const newCart = [...cart, item];
-    cart.includes(item) ? "" : setCart(newCart);
+    return cart.includes(item)
+      ? setToaster(true)
+      : setCart(newCart);
   }
 
   return (
